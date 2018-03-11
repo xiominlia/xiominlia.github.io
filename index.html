@@ -68,39 +68,39 @@
 
 
 				<!-- 第二篇 -->
-				<article class="box post post-excerpt">
-					<!--文章标题-->
-					<header>
-						<h2><a href="#">自定义文章标题</a></h2>
-						<p>自定义文章目标题</p>
-					</header>
-					<!--日期和分享点赞-->
-					<div class="info">
-						<!--
-						注意:日期应该按照如下所示的格式进行格式化。特别是,这个月的“least significant”字符应该封装在一个<span>中。
-                            元素表示在1200px模式下被删除的内容(eg. the "uary" in "January")。哦，如果你不需要某个特定页面或帖子的日期，
-                            你可以直接删除。整个“data”元素。
-                         -->
-						<span class="date"><span class="month">3月<span>y</span></span> <span class="day">11</span><span class="year">, 2018</span></span>
-						<!--
-                            Note: stats中内容表示文章的点赞分享等，您可以将“stats”中的列表项的数量改为您想要的。
-                        -->
-						<ul class="stats">
-							<li><a href="#" class="icon fa-thumbs-up">16</a></li>
-							<li><a href="#" class="icon fa-heart">32</a></li>
-							<li><a href="#" class="icon fa-weibo">64</a></li>
-							<li><a href="#" class="icon fa-wechat">128</a></li>
-						</ul>
-					</div>
-					<!--文章中插入的图片-->
-					<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-					<!--文章正文概况-->
-					<p>
-						自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容
-						自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容
-						自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容
-					</p>
-				</article>
+				<!--<article class="box post post-excerpt">-->
+					<!--&lt;!&ndash;文章标题&ndash;&gt;-->
+					<!--<header>-->
+						<!--<h2><a href="#">自定义文章标题</a></h2>-->
+						<!--<p>自定义文章目标题</p>-->
+					<!--</header>-->
+					<!--&lt;!&ndash;日期和分享点赞&ndash;&gt;-->
+					<!--<div class="info">-->
+						<!--&lt;!&ndash;-->
+						<!--注意:日期应该按照如下所示的格式进行格式化。特别是,这个月的“least significant”字符应该封装在一个<span>中。-->
+                            <!--元素表示在1200px模式下被删除的内容(eg. the "uary" in "January")。哦，如果你不需要某个特定页面或帖子的日期，-->
+                            <!--你可以直接删除。整个“data”元素。-->
+                         <!--&ndash;&gt;-->
+						<!--<span class="date"><span class="month">3月<span>y</span></span> <span class="day">11</span><span class="year">, 2018</span></span>-->
+						<!--&lt;!&ndash;-->
+                            <!--Note: stats中内容表示文章的点赞分享等，您可以将“stats”中的列表项的数量改为您想要的。-->
+                        <!--&ndash;&gt;-->
+						<!--<ul class="stats">-->
+							<!--<li><a href="#" class="icon fa-thumbs-up">16</a></li>-->
+							<!--<li><a href="#" class="icon fa-heart">32</a></li>-->
+							<!--<li><a href="#" class="icon fa-weibo">64</a></li>-->
+							<!--<li><a href="#" class="icon fa-wechat">128</a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--&lt;!&ndash;文章中插入的图片&ndash;&gt;-->
+					<!--<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+					<!--&lt;!&ndash;文章正文概况&ndash;&gt;-->
+					<!--<p>-->
+						<!--自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容-->
+						<!--自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容-->
+						<!--自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容自定义文章内容-->
+					<!--</p>-->
+				<!--</article>-->
 
 				<!-- 页码 -->
 				<div class="pagination">
@@ -135,10 +135,12 @@
 			</nav>
 
 
-			<!-- 搜索 -->
+			<!-- 搜索 method="post"-->
 			<section class="box search">
-				<form method="post" action="#">
-					<input type="text" class="text" name="search" placeholder="搜索……" />
+				<form  action="https://cse.google.com/cse.js?cx=" method="get" target="_blank">
+					<input type="hidden" name="s" value="005362428918317769603:xx4hbujcg0c">
+					<input type="hidden" name="entry" value="1">
+					<input type="text" class="text" name="search" placeholder="搜索……" autocomplete="off">
 				</form>
 			</section>
 
@@ -250,7 +252,10 @@
 			</ul>
 
 		</div>
-
+			<!--网易云音乐-->
+		<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86-->
+				<!--src="//music.163.com/outchain/player?type=2&id=521183107&auto=1&height=66">-->
+		<!--</iframe>-->
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
