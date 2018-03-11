@@ -6,23 +6,41 @@
 	!!!I I kept these comments!!!
 -->
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="我的空间">
+	<meta name="author" content="熊明亮">
 
-		<!--[if lte IE 8]>
-	<script src="assets/js/ie/html5shiv.js"></script>
-		<![endif]-->
+	<!-- 引入Bootstrap core CSS -->
+	<link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+	<!-- 此模板的自定义字体 -->
+	<link href="assets/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- 自定义样式 -->
+	<link href="assets/css/thumbnail-gallery.css" rel="stylesheet">
+	<link href="assets/css/agency.min.css" rel="stylesheet">
+
+	<!--[if lte IE 8]>
+	<script src="assets/js/ie/html5shiv.js"></script>		<![endif]-->
 
 	<link rel="stylesheet" href="assets/css/main.css" />
-
 		<!--[if lte IE 8]>
 	<link rel="stylesheet" href="assets/css/ie8.css" />
+
 		<![endif]-->
 	<title>My Space</title>
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
-<body>
+
+<body id="pagetop">
+<section id="page-top"></section>
 
 		<!-- 文章概要和页码 -->
 		<div id="content">
@@ -103,18 +121,22 @@
 				<!--</article>-->
 
 				<!-- 页码 -->
-				<div class="pagination">
-					<a href="#" class="button previous">上一页</a>
-					<div class="pages">
-						<a href="#" class="active">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<span>&hellip;</span>
-						<a href="#">20</a>
+					<div class="pagination">
+						<a href="#" class="button previous"  disabled="disabled">上一页</a>
+						<div class="pages">
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<span>&hellip;</span>
+							<a href="#">20</a>
+						</div>
+						<a href="#" class="button next"  disabled="disabled">下一页</a>
 					</div>
-					<a href="#" class="button next">下一页</a>
+				<div class="pagination">
+					<a href="#pagetop">回到顶栏</a>
 				</div>
+
 
 			</div>
 		</div>
@@ -129,6 +151,7 @@
 				<ul>
 					<li class="current"><a href="#">最近帖子</a></li>
 					<li><a href="#">全部</a></li>
+					<li><a href="gallery.html">图库</a></li>
 					<li><a href="#">关于我</a></li>
 					<li><a href="mailto:xmlxio@outlook">联系我</a></li>
 				</ul>
@@ -149,8 +172,6 @@
 			</section>
 
 
-
-
 			<!-- 文本框 -->
 			<section class="box text-style1">
 				<div class="inner">
@@ -161,31 +182,21 @@
 				</div>
 			</section>
 
-			<!-- 最近帖子 -->
-			<!--<section class="box recent-posts">-->
-				<!--<header>-->
-					<!--<h2>Recent Posts</h2>-->
-				<!--</header>-->
-				<!--<ul>-->
-					<!--<li><a href="#">Lorem ipsum dolor</a></li>-->
-					<!--<li><a href="#">Feugiat nisl aliquam</a></li>-->
-					<!--<li><a href="#">Sed dolore magna</a></li>-->
-					<!--<li><a href="#">Malesuada commodo</a></li>-->
-					<!--<li><a href="#">Ipsum metus nullam</a></li>-->
-				<!--</ul>-->
-			<!--</section>-->
 
-			<!-- 最近评论 -->
-			<section class="box recent-comments">
+			<!-- 最近帖子 -->
+			<section class="box recent-posts">
 				<header>
-					<h2>Recent Comments</h2>
+					<h2>最近帖子</h2>
 				</header>
 				<ul>
-					<li>case on <a href="#">Lorem ipsum dolor</a></li>
-					<li>molly on <a href="#">Sed dolore magna</a></li>
-					<li>case on <a href="#">Sed dolore magna</a></li>
+					<li><a href="#">暂无暂无暂无</a></li>
+					<li><a href="#">暂无暂无暂无</a></li>
+					<li><a href="#">暂无暂无暂无暂无</a></li>
+					<li><a href="#">暂无暂无暂无暂无暂无</a></li>
+					<li><a href="#">暂无暂无暂无</a></li>
 				</ul>
 			</section>
+
 
 			<!-- 日历 -->
 			<section class="box calendar">
@@ -250,8 +261,9 @@
 			</section>
 			<script language=Javascript>
                 var now=new Date()
-                document.write("现在是" +now.getYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日"+now.getHours()+"时"+now.getMinutes()+"分")
+                document.write("现在是2018年"+(now.getMonth()+1)+"月"+now.getDate()+"日"+now.getHours()+"时"+now.getMinutes()+"分")
 			</script>
+
 
 			<!-- 版本 -->
 			<ul id="copyright">
@@ -259,16 +271,29 @@
 			</ul>
 
 		</div>
-			<!--网易云音乐-->
-		<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86-->
-				<!--src="//music.163.com/outchain/player?type=2&id=521183107&auto=1&height=66">-->
-		<!--</iframe>-->
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+
+			<!-- Bootstrap core JavaScript -->
+			<script src="assets/js/jquery/jquery.min.js"></script>
+			<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			<!-- Plugin JavaScript -->
+			<script src="assets/js/jquery/jquery-easing/jquery.easing.min.js"></script>
+
+			<!-- Contact form JavaScript -->
+			<script src="assets/js/jqBootstrapValidation.js"></script>
+			<script src="assets/js/contact_me.js"></script>
+
+			<!-- Custom scripts for this template -->
+			<script src="assets/js/agency.min.js"></script>
+
 	</body>
+
 </html>
