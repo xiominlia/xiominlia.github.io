@@ -135,14 +135,26 @@
 			</nav>
 
 
-			<!-- 搜索 method="post"-->
+			<!-- 搜索 -->
 			<section class="box search">
-				<form  action="https://cse.google.com/cse.js?cx=" method="get" target="_blank">
+				<form method="post" action="https://cse.google.com/cse.js?cx=" method="get" target="_blank">
 					<input type="hidden" name="s" value="005362428918317769603:xx4hbujcg0c">
 					<input type="hidden" name="entry" value="1">
 					<input type="text" class="text" name="search" placeholder="搜索……" autocomplete="off">
 				</form>
 			</section>
+			<script>
+                (function() {
+                    var cx = '005362428918317769603:xx4hbujcg0c';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+			</script>
+			<gcse:search></gcse:search>
 
 			<!-- 文本框 -->
 			<section class="box text-style1">
